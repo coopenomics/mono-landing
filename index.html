@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Цифровой Кооператив — система управления кооперативом</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/css/main.css">
+<script>!function(){var t=localStorage.getItem("coop-theme");if(t&&t!=="system")document.documentElement.setAttribute("data-theme",t)}();</script>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-logo">
+    <img src="src/assets/logo.svg" alt="Цифровой Кооператив" class="nav-logo-img">
+    <span class="n-brand">Цифровой Кооператив</span>
+  </div>
+  <div class="nav-links">
+    <!-- <a href="#ready">Возможности</a>
+    <a href="#base">Приложения</a>
+    <a href="#reporting">Отчётность</a>
+    <a href="#chatcoop">ChatCoop</a>
+    <a href="#pricing">Стоимость</a>
+    <a href="#connect">Подключение</a>
+    <a href="https://docs.coopenomics.world" target="_blank">Документация</a> -->
+  </div>
+  <div class="nav-right">
+    <button type="button" id="theme-toggle" class="nav-theme-btn" aria-label="Переключить тему" title="Тема: системная">
+      <span class="theme-icon theme-icon-system" aria-hidden="true"></span>
+    </button>
+    <a href="#connect" class="nav-cta">Подключиться →</a>
+  </div>
+</nav>
+
+
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="W">
+    <div class="hero-pill r">
+      Система управления ресурсами кооператива
+    </div>
+    
+    <h1 class="t1 hero-h1 r d2">
+      Управление <br>кооперативом —<br> <em>онлайн</em>
+    </h1>
+    <p class="hero-p r d3">
+      Регистрация пайщиков, реестры, Решения совета и общие собрания — всё онлайн. Цифровой Кооператив формирует полный пакет юридически значимых документов автоматически, при нажатии кнопок.
+    </p>
+    <div class="hero-btns r d4">
+      <a href="#connect" class="btn btn-g">Подключить кооператив</a>
+      <a href="#ready" class="btn btn-o">Возможности →</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="ready">
+  <div class="W">
+    <div class="r">
+      <span class="cap" style="display:block;margin-bottom:14px">Уже в работе</span>
+      <h2 class="t2">Основные возможности,<br>доступные <em>сейчас</em></h2>
+    </div>
+
+    <div class="ready-grid">
+
+      <div class="rc r d1">
+        <div class="rc-n">01</div>
+        <div class="rc-title">
+          <h3>Удалённая регистрация пайщиков</h3>
+        </div>
+        <div class="rc-body">
+          <p>Вступить в кооператив так же просто, как зарегистрироваться на сайте. При регистрации система создаёт электронную подпись пайщика на его устройстве — ключ хранится у него, не у вас. Принимаются физлица, ИП и организации. Действующих пайщиков, вступавших офлайн, можно пригласить в систему отдельно.</p>
+        </div>
+      </div>
+
+      <div class="rc r d2">
+        <div class="rc-n">02</div>
+        <div class="rc-title">
+          <h3>Решения совета кооператива</h3>
+        </div>
+        <div class="rc-body">
+          <p>Повестка формируется автоматически по событиям системы — новая заявка на вступление, взнос, запрос приложения. Члены совета голосуют онлайн. Протокол генерируется, подписывается председателем электронной подписью и сохраняется в реестре. При необходимости решение исполняется системой.</p>
+        </div>
+      </div>
+
+      <div class="rc r d3">
+        <div class="rc-n">03</div>
+        <div class="rc-title">
+          <h3>Общие собрания пайщиков</h3>
+        </div>
+        <div class="rc-body">
+          <p>Очередные и внеочередные собрания — в дистанционном формате. Система рассылает уведомления, собирает голоса по каждому вопросу повестки. Председатель и секретарь подписывают протокол электронной подписью. Все решения хранятся в реестре документов.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="registries">
+  <div class="W">
+    <div class="reg-wrap">
+
+      <div class="r">
+        <span class="cap" style="display:block;margin-bottom:14px">Реестры и кошельки</span>
+        <h2 class="t2" style="margin-bottom:20px">Все данные —<br>в <em>реестрах</em></h2>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8">Каждое событие кооператива фиксируется в соответствующем реестре. Пайщики, платежи, документы и фонды находятся в одной системе с разграничением прав доступа.</p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">Документы хранятся в реестре в формате PDF, подписываются и могут быть предъявлены при аудите, в суде или налоговой. Блокчейн используется только для фиксации криптографического доказательства неизменности документа.</p>
+      </div>
+
+      <div class="reg-items r d2">
+        <div class="ri">
+          <div class="ri-icon">👥</div>
+          <div>
+            <div class="ri-name">Реестр пайщиков</div>
+            <div class="ri-desc">Все участники с историей действий, статусами и документами. Поиск по ФИО, ИНН, ОГРН и наименованию организации.</div>
+          </div>
+        </div>
+
+        <div class="ri">
+          <div class="ri-icon">💳</div>
+          <div>
+            <div class="ri-name">Реестр платежей</div>
+            <div class="ri-desc">История всех взносов и возвратов. Поддерживается ручное подтверждение операций или автоматическая обработка через платёжные шлюзы.</div>
+          </div>
+        </div>
+
+        <div class="ri">
+          <div class="ri-icon">📄</div>
+          <div>
+            <div class="ri-name">Реестр документов</div>
+            <div class="ri-desc">Все созданные документы кооператива. Полнотекстовый поиск, проверка цифровой подписи и скачивание PDF. Каждый пайщик видит только свои документы.</div>
+          </div>
+        </div>
+
+        <div class="ri">
+          <div class="ri-icon">💼</div>
+          <div>
+            <div class="ri-name">Реестр кошельков</div>
+            <div class="ri-desc">Учёт движения средств кооператива и пайщиков. Балансы изменяются только через действия смарт-контрактов.</div>
+          </div>
+        </div>
+        
+        <div class="ri ri-key">
+          <div class="ri-icon">⛓</div>
+          <div>
+            <div class="ri-name">Распределённый реестр</div>
+            <div class="ri-desc">Блокчейн фиксирует криптографический хэш документов и юридически значимых действий. Это позволяет подтвердить подлинность документа без раскрытия персональных данных.</div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="arch-box arch-box-full r d2">
+        <div class="arch-box-inner">
+          <div class="flow-vertical">
+            <span class="fs-node plain">Рабочий стол</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node plain">Документ (PDF)</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node plain">Электронная Подпись</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node key">Действие смарт-контракта</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node plain">Хэш документа</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node chain">Блокчейн</span>
+          </div>
+          <div class="arch-box-text">
+            <span class="cap" style="display:block;margin-bottom:14px">Архитектурное ядро</span>
+            <h2 class="t3" style="margin-bottom:18px">Стандарты кооперации —<br><em>в смарт-контрактах</em></h2>
+            <p>
+              Все ключевые действия в системе выполняются по алгоритмам смарт-контрактов. Пользователь нажимает кнопку в интерфейсе, а система создаёт PDF-документ для электронной подписью. После этого система вычисляет криптографический хэш документа и передаёт его в действие смарт-контракта. 
+            </p>
+            <p style="margin-top:10px">
+              Смарт-контракт фиксирует хэш документа в блокчейне как часть транзакции бизнес-процесса. Транзакция выполняется только при соблюдении заданных условий, поэтому запись в блокчейне подтверждает, что конкретный документ участвовал в этом действии. Сам PDF хранится в реестре документов кооператива, а блокчейн содержит лишь криптографический отпечаток и факт исполнения операции.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="docsplit">
+  <div class="W">
+    <div class="split-wrap">
+
+      <div class="r">
+        <span class="cap" style="display:block;margin-bottom:14px">Как формируется документ</span>
+        <h2 class="t2" style="margin-bottom:18px">Кнопка —<br><em>первичный документ</em></h2>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8">
+          Каждое действие в кооперативе — вступление, взнос, заказ, голосование — это шаг в юридически значимом процессе. Алгоритм каждого процесса закреплён в смарт-контракте в блокчейне: он определяет, кто действует, в каком порядке и какой документ при этом создаётся.
+        </p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">
+          Документы не генерируются разом — они появляются по одному, в момент, когда конкретный участник нажимает свою кнопку. Пайщик подаёт заявление — создаётся заявление. Члены совета голосуют и принимают решение — создаётся протокол. Так шаг за шагом процесс наполняется документами. Каждый подписывает своей электронной подписью, ключ хранится на его устройстве.
+        </p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">
+          Когда процесс завершён, все документы по нему хранятся в реестре как единый комплект — пакет. Криптографический отпечаток каждого документа зафиксирован в блокчейне: подлинность можно подтвердить в любой момент без нотариуса.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-spine"><div class="sn">01</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Пайщик совершает действие</h4>
+              <p>Нажимает кнопку — система создаёт документ по шаблону смарт-контракта и предлагает подписать его электронной подписью.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-spine"><div class="sn">02</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Совет рассматривает и отвечает</h4>
+              <p>Члены совета видят событие в повестке, голосуют и принимают решение. В этот момент создаётся и подписывается следующий документ — протокол.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-spine"><div class="sn">03</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Каждый шаг — отдельный документ</h4>
+              <p>Алгоритм процесса задан смарт-контрактом. Документы появляются по одному, в нужный момент, у нужного участника.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-spine"><div class="sn">04</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Документ делится на две части</h4>
+              <p>Приватные данные — только на сервере кооператива. В блокчейн уходит только анонимный хэш для верификации.</p>
+            </div>
+          </div>
+          <div class="step done">
+            <div class="step-spine"><div class="sn">✓</div></div>
+            <div class="sb">
+              <h4>Процесс завершён — пакет в реестре</h4>
+              <p>Все документы и цифровые подписи участников процесса собраны в реестре. Кошельки обновлены. Правила стандартов кооперации выполнены.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="r d2">
+
+        <!-- ── Визуальная схема разделения документа ── -->
+        <div class="doc-split-schema">
+          <div class="doc-split-top">
+            <div class="doc-split-file">
+              <span>📄</span>
+              <span>document.pdf</span>
+              <span class="doc-split-signed">✓ ЭП пайщика</span>
+            </div>
+          </div>
+
+          <div class="doc-split-divider">
+            <div class="doc-split-line"></div>
+            <div class="doc-split-label">состоит из двух частей</div>
+            <div class="doc-split-line"></div>
+          </div>
+
+          <div class="db-halves">
+            <div class="db-half">
+              <div class="db-hh">🔒 Реестр документов</div>
+              <div class="db-hh-note">Приватно · ваш сервер</div>
+              <div class="db-row"><span class="dk">ФИО</span><span class="dv dim">Иванов Иван И.</span></div>
+              <div class="db-row"><span class="dk">Email</span><span class="dv dim">ivan@example.com</span></div>
+              <div class="db-row"><span class="dk">Телефон</span><span class="dv dim">+7 910 ███-██</span></div>
+              <div class="db-row"><span class="dk">Документ</span><span class="dv dim">document.pdf</span></div>
+            </div>
+            <div class="db-half">
+              <div class="db-hh pub">⛓ Распределённый реестр</div>
+              <div class="db-hh-note">Публично · блокчейн</div>
+              <div class="db-row"><span class="dk">Аккаунт</span><span class="dv hash">ivanov12345</span></div>
+              <div class="db-row"><span class="dk">Сумма</span><span class="dv">5 000 ₽</span></div>
+              <div class="db-row"><span class="dk">SHA-256</span><span class="dv hash">a1b2c3…</span></div>
+              <div class="db-row"><span class="dk">Подпись</span><span class="dv ok">✓ верифицирована</span></div>
+            </div>
+          </div>
+
+          <div class="db-note doc-split-desc">
+            Публичные данные хранятся в блокчейне анонимизированно, приватные — в базе данных кооператива. Всем доступна информация о факте действия, но только кооперативу — кем конкретно это действие произведено.
+          </div>
+        </div>
+
+        <!-- ── Что такое пакет документов ── -->
+        <div class="doc-packet-box">
+          <span class="cap" style="display:block;margin-bottom:10px;font-size:9px">Пакет документов</span>
+          <p style="font-size:13px;color:var(--text-soft);line-height:1.8;margin-bottom:14px">
+            Пакет — это не моментальная выгрузка, а итог процесса. Возьмём вступление нового пайщика: сначала пайщик подаёт заявление и подписывает его — появляется первый документ. Затем совет рассматривает заявку, голосует и принимает решение — появляется второй. Когда все шаги пройдены, процесс закрыт, а его документы хранятся в реестре как единый пакет. Взнос, заказ, возврат — у каждого сценария свой алгоритм и свой пакет.
+          </p>
+          <div class="doc-packet-event">Пример: <strong>Вступление пайщика</strong></div>
+          <div class="doc-packet-arr">↓</div>
+          <div class="doc-packet-list">
+            <div class="doc-packet-item"><span>📄</span> Заявление о вступлении <span style="font-size:10px;color:var(--text-soft);">— подписывает пайщик</span></div>
+            <div class="doc-packet-item"><span>📄</span> Протокол решения совета <span style="font-size:10px;color:var(--text-soft);">— подписывает председатель</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="base">
+  <div class="W">
+    <div class="r">
+      <span class="cap" style="display:block;margin-bottom:14px">Базовая поставка</span>
+      <h2 class="t2" style="margin-bottom:14px">Включено в каждый<br><em>кооператив</em></h2>
+      <p style="max-width:600px;font-size:15px;color:var(--text-soft);line-height:1.8">Четыре приложения в комплекте — достаточно для ведения полноценной кооперативной деятельности. Дополнительные подключаются из каталога.</p>
+    </div>
+
+    <div class="base-grid">
+      <div class="ba r d1">
+        <div class="ba-num">БАЗОВОЕ / 01</div>
+        <h4>Регистрация пайщиков</h4>
+        <p>Удалённое вступление онлайн, выдача электронной подписи, ведение электронного реестра пайщиков. Физлица, ИП, организации. Импорт офлайн-пайщиков в систему.</p>
+      </div>
+      <div class="ba r d2">
+        <div class="ba-num">БАЗОВОЕ / 02</div>
+        <h4>Решения совета</h4>
+        <p>Автоматическое объявление собрания совета по стандартным вопросам. Ручное объявление собрания по произвольным вопросам. Голосование онлайн. Протокол формируется автоматически — без бумаги.</p>
+      </div>
+      <div class="ba r d2">
+        <div class="ba-num">БАЗОВОЕ / 03</div>
+        <h4>Общие собрания</h4>
+        <p>Очередные и внеочередные общие собрания пайщиков. Рассылка уведомлений, сбор подписей и голосов, формирование протокола за подписью председателя и секретаря собрания. Собрания переобъявляются до принятия решения по кворуму. </p>
+      </div>
+      <div class="ba r d3">
+        <div class="ba-num">БАЗОВОЕ / 04</div>
+        <h4>Цифровой кошелёк</h4>
+        <p>Лицевой счёт пайщика и кооператива. Учёт взносов, возвратов и балансов по всем программам. Приём платежей через ЮКасса или банковским переводом по QR-коду.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="store">
+  <div class="W">
+    <div class="r">
+      <span class="cap" style="display:block;margin-bottom:14px">Каталог приложений</span>
+      <h2 class="t2" style="margin-bottom:14px">Расширяйте свой<br><em>кооператив</em></h2>
+      <p style="max-width:580px;font-size:15px;color:var(--text-soft);line-height:1.8">При установке приложений из каталога кооператив получает новые рабочие столы — смарт-контракты с логикой и шаблонами документов, реализующие новые сценарии кооперации. С помощью приложений кооператив формирует набор рабочих столов, которые доступны пайщикам для выполнения кооперативных действий.</p>
+    </div>
+
+    <div class="store-list">
+
+      <div class="sa feat r d1">
+        <div>
+          <div class="sa-label">Кооперативные инвестиции</div>
+          <h4>Благорост</h4>
+        </div>
+        <div>
+          <p>Приложение для учёта взносов временем или деньгами в создание результатов интеллектуальной деятельности. Предоставляет трекер взносов и ведет возвратов по проектам, компонентам и задачам. Участники получают долю в объекте авторских прав и получают возвраты пропорционально взносу.</p>
+          <a class="sa-link" href="https://благорост.цифровой-кооператив.рф" target="_blank">благорост.цифровой-кооператив.рф →</a>
+        </div>
+        <div class="sa-st"><span class="b b-live">● Доступно</span></div>
+      </div>
+
+      <div class="sa r d1">
+        <div>
+          <div class="sa-label">Поставка-преобретение</div>
+          <h4>Стол заказов</h4>
+        </div>
+        <div>
+          <p>Кооперативная модель поставки-преобретения имущества. Поставщики размещают предложения, пайщики совершают заказы. Безопасная сделка через смарт-контракт: блокировка средств, приём и выдача по актам, споры и гарантийный возврат.</p>
+        </div>
+        <div class="sa-st"><span class="b b-dev">В разработке</span></div>
+      </div>
+
+      <div class="sa r d2">
+        <div>
+          <div class="sa-label">Кооперативное жильё</div>
+          <h4>Очередь на недвижимость</h4>
+        </div>
+        <div>
+          <p>Приобретение недвижимости по кооперативной очереди с ежемесячным платежом без ссудного процента. Советская практика жилищных кооперативов в современной реализации под демократическим контролем пайщиков.</p>
+        </div>
+        <div class="sa-st"><span class="b b-dev">В разработке</span></div>
+      </div>
+
+      <div class="sa r d2">
+        <div>
+          <div class="sa-label">Кооперативная аренда</div>
+          <h4>Пользование имущества</h4>
+        </div>
+        <div>
+          <p>Временное использование кооперативного имущества — от инструментов и оборудования до недвижимости. Доступное время использования распределяется по заявкам пайщиков.</p>
+        </div>
+        <div class="sa-st"><span class="b b-dev">В разработке</span></div>
+      </div>
+
+      <div class="sa r d2">
+        <div>
+          <div class="sa-label">Расширение каталога</div>
+          <h4>Новые приложения</h4>
+        </div>
+        <div>
+          <p>В каталог добавляются новые приложения. Кооперативы устанавливают их из каталога по мере появления и получать обновления автоматически.</p>
+        </div>
+        <div class="sa-st"><span class="b b-open">Открытый код</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="reporting">
+  <div class="W">
+    <div class="rep-wrap">
+
+      <div class="r">
+        <span class="cap" style="display:block;margin-bottom:14px">Учёт и отчётность</span>
+        <h2 class="t2" style="margin-bottom:20px">Первичные документы —<br>основа для <em>отчётности</em></h2>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8">Все документы, формируемые системой, являются первичными учётными документами. На их основе строится отчётность для ФНС и ФСС.</p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">Система автоматически формирует отчетные документы в форматах контролирующих органов. Кооперативы получают готовые отчеты для импорта в 1С и/или отправки их в электронном виде.</p>
+      </div>
+
+      <div class="rep-cards r d2">
+        <div class="rep-card">
+          <span class="cap cap-gold" style="display:block;margin-bottom:8px;font-size:9px">В разработке</span>
+          <h4>Отчёты для ФНС и ФСС</h4>
+          <p>Регуляторная отчётность формируется автоматически на основе реестра операций. Готова к сдаче без ручной сборки.</p>
+          <ul class="rep-list">
+            <li>Автоматическая сборка из реестра операций</li>
+            <li>Выгрузка в форматах контролирующих органов</li>
+            <li>История операций по всем счетам</li>
+          </ul>
+        </div>
+        <div class="rep-card">
+          <span class="cap cap-gold" style="display:block;margin-bottom:8px;font-size:9px">В разработке</span>
+          <h4>Интеграция с 1С</h4>
+          <p>API для синхронизации документов с 1С. Первичные документы платформы поступают в 1С без перепечатки.</p>
+          <ul class="rep-list">
+            <li>Синхронизация первичных документов</li>
+            <li>План счетов кооператива</li>
+            <li>История операций по счетам</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="chatcoop">
+  <div class="W">
+    <div class="chatcoop-grid">
+
+      <div class="r">
+        <span class="cap" style="display:block;margin-bottom:14px">Кооперативный мессенджер</span>
+        <h2 class="t2" style="margin-bottom:20px">Op!Coop —<br>связь <em>внутри<br>и между</em></h2>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8">
+          Op!Coop — кооперативный мессенджер для пайщиков и советов кооперативов. Каждый подключённый кооператив получает собственное закрытое пространство: чаты совета и пайщиков с возможностью проводить собрания. 
+        </p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">
+          Все кооперативы объединены в общей коммуникационной сети — для обмена опытом, совместных инициатив и решения вопросов роста кооперативной экономики.
+        </p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">
+          Op!Coop устанавливается из каталога приложений — как любое другое приложение платформы. 
+        </p>
+      </div>
+
+      <div class="r d2">
+
+        <!-- Сетевая схема -->
+        <div class="chatcoop-network">
+
+          <!-- Общая сеть -->
+          <div class="chatcoop-network-top">
+            <div class="chatcoop-network-badge">
+              <span>🌐</span>
+              <span>Сеть кооперативной связи</span>
+            </div>
+          </div>
+
+          <!-- Три кооператива -->
+          <div class="chatcoop-coops">
+            <div class="chatcoop-coop">
+              <div class="chatcoop-coop-h">Кооператив А</div>
+              <div class="chatcoop-coop-body">
+                <div>👥 Совет</div>
+                <div>💬 Пайщики</div>
+                <div>📋 Собрания</div>
+              </div>
+            </div>
+            <div class="chatcoop-coop chatcoop-coop-highlight">
+              <div class="chatcoop-coop-h">Ваш кооператив</div>
+              <div class="chatcoop-coop-body">
+                <div>👥 Совет</div>
+                <div>💬 Пайщики</div>
+                <div>📋 Собрания</div>
+              </div>
+            </div>
+            <div class="chatcoop-coop">
+              <div class="chatcoop-coop-h">Кооператив Б</div>
+              <div class="chatcoop-coop-body">
+                <div>👥 Совет</div>
+                <div>💬 Пайщики</div>
+                <div>📋 Собрания</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chatcoop-network-footer">
+            Закрытые пространства кооперативов · Открытые каналы связи между кооперативами
+          </div>
+        </div>
+
+        <!-- Возможности -->
+        <div class="reg-items chatcoop-features" style="gap:10px;">
+          <div class="ri">
+            <div class="ri-icon">👥</div>
+            <div>
+              <div class="ri-name">Чат совета</div>
+              <div class="ri-desc">Закрытое пространство для совета кооператива.</div>
+            </div>
+          </div>
+          <div class="ri">
+            <div class="ri-icon">💬</div>
+            <div>
+              <div class="ri-name">Чат пайщиков</div>
+              <div class="ri-desc">Закрытое пространство для пайщиков кооператива.</div>
+            </div>
+          </div>
+          <div class="ri">
+            <div class="ri-icon">📋</div>
+            <div>
+              <div class="ri-name">Собрания в чате</div>
+              <div class="ri-desc">Звонки с автотранскрипцией и разбивкой по спикерам.</div>
+            </div>
+          </div>
+          <div class="ri">
+            <div class="ri-icon">🌐</div>
+            <div>
+              <div class="ri-name">Сеть кооперативной связи</div>
+              <div class="ri-desc">Общие каналы связи между кооперативами.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="pricing">
+  <div class="W">
+    <div class="r" style="margin-bottom:48px">
+      <span class="cap" style="display:block;margin-bottom:14px">Стоимость и подключение</span>
+      <h2 class="t2" style="margin-bottom:14px">Платите за то,<br><em>чем пользуетесь</em></h2>
+      <p style="max-width:560px;font-size:15px;color:var(--text-soft);line-height:1.8">Базовый пакет включает квоту на новых пайщиков и пакеты документов в месяц. При превышении — расход по факту. Дополнительные приложения из магазина тарифицируются отдельно.</p>
+    </div>
+
+    <div class="price-wrap">
+      <div class="r">
+        <div class="price-head head-highlight">
+          <span class="cap" >Тариф "Базовый"</span>
+        </div>
+        <div class="price-rules">
+          <div class="pr">
+            <span class="pr-l">Вступление в ПК «ВОСХОД»</span>
+            <span class="pr-v">4 000 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Вступительный взнос в союз</span>
+            <span class="pr-v">1 500 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Членский взнос в союз</span>
+            <span class="pr-v">1 000 ₽/мес</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Минимальный ежемесячный взнос</span>
+            <span class="pr-v">3 500 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Новых пайщиков в месяц включено</span>
+            <span class="pr-v">50 чел.</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Пакетов документов в месяц включено</span>
+            <span class="pr-v">50 пакетов</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Сверх квоты — новый пайщик</span>
+            <span class="pr-v">20 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Сверх квоты — один пакет документов</span>
+            <span class="pr-v">10 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Хостинг на серверах ПК «ВОСХОД»</span>
+            <span class="pr-v">включён</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Приложения из каталога</span>
+            <span class="pr-v">по тарифу приложения</span>
+          </div>
+        </div>
+        <div class="pr-note">Оплата за нового пайщика — единовременная, не ежемесячная. Стоимость пакетов документов — по факту, но не менее 4 500 ₽/мес. Членство в союзах может влиять на условия. Точная стоимость каждого пакета документов определяется блокчейн-протоколом на основе количества обработанной, переданной и хранимой информации в пакете (может отличаться как в большую так и меньшую сторону).</div>
+      </div>
+
+      <div class="r d2">
+        <div class="calc-box">
+          <div class="calc-head head-highlight">
+            <span class="cap">Калькулятор стоимости</span>
+          </div>
+          <div class="calc-body">
+            <div class="calc-row">
+              <span class="calc-lbl">Новых пайщиков в этом месяце</span>
+              <input class="calc-inp" type="number" id="cm" value="50" min="0">
+            </div>
+            <div class="calc-row">
+              <span class="calc-lbl">Пакетов документов в месяц</span>
+              <input class="calc-inp" type="number" id="cd" value="50" min="0">
+            </div>
+            <div class="calc-row">
+              <span class="calc-lbl">Членский взнос в союз</span>
+              <span class="calc-app-price">1 000 ₽/мес</span>
+            </div>
+            <hr class="calc-div">
+            <div class="calc-app-lbl">Приложения из каталога</div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a1" checked disabled>
+                Регистрация пайщиков <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a2" checked disabled>
+                Решения совета <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a3" checked disabled>
+                Общие собрания <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a4" checked disabled>
+                Цифровой кошелёк <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-result">
+              <div>
+                <div class="cr-lbl">Итого в месяц</div>
+                <div class="cr-bd" id="calc-bd">базовый пакет 3 500 ₽</div>
+              </div>
+              <div class="cr-total" id="calc-total">3 500 ₽</div>
+            </div>
+            <div class="calc-once calc-once-highlight" id="calc-once">При подключении: +5 500 ₽</div>
+            <div class="calc-note">Стоимость за новых пайщиков сверх квоты — разовая, не ежемесячная. Новые приложения из каталога тарифицируются по тарифу приложения.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="connect">
+  <div class="W">
+
+    <div class="r" style="margin-bottom:40px;">
+      <span class="cap" style="display:block;margin-bottom:14px">Поставка и подключение</span>
+      <h2 class="t2" style="margin-bottom:20px">Открытый код —<br>облачная поставка —<br><em>24 часа</em></h2>
+      <p style="max-width:580px;font-size:15px;color:var(--text-soft);line-height:1.8">
+        Платформа распространяется с открытым исходным кодом. Подключение — полностью онлайн: никаких визитов в офис, никаких технических специалистов на вашей стороне. После оплаты система разворачивается автоматически и через 24 часа готова к работе на вашем домене.
+      </p>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="r d2">
+      <span class="cap" style="display:block;margin-bottom:24px">Шаги подключения</span>
+      <div class="timeline">
+
+        <div class="tl">
+          <div class="tl-left">
+            <div class="tl-dot active"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-step">01</div>
+            <h4>Вступление в ПК «ВОСХОД»</h4>
+            <p>Ваш кооператив вступает в ПК «ВОСХОД» — оператора платформы — как юридическое лицо. Заявление заполняется онлайн, соглашение о подключении подписывается электронной подписью. Там же указывается домен, на котором будет развёрнута система. </p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-step">02</div>
+            <h4>Делегирование домена</h4>
+            <p>После подтверждения заявки система выдаёт адрес для делегирования. Вы указываете его у своего регистратора домена — по пошаговой инструкции, без технических знаний. Занимает несколько минут.</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-step">03 &nbsp;·&nbsp; <span style="color:var(--gold)">≤ 24 часа</span></div>
+            <h4>Автоматическая поставка</h4>
+            <p>Платформа разворачивается на наших серверах автоматически — без вашего участия. В результате вы получаете полностью рабочую систему: блокчейн-ноду, веб-интерфейс и мобильное приложение для пайщиков, доступные на вашем домене.</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-step">04</div>
+            <h4>Инициализация совета</h4>
+            <p>Председатель совета проходит первоначальную настройку через интерфейс системы: приглашает членов совета и настраивает внешний вид цифрового кооператива для пайщиков. Всё пошагово, без технических знаний.</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-left">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-step gold">05 &nbsp;·&nbsp; 30 дней</div>
+            <h4>Период адаптации</h4>
+            <p>После запуска у кооператива есть 30 дней, чтобы адаптировать базовый документооборот к работе в системе. Для этого будут предоставлены шаблоны решений совета, которые будет предложено принять. Все действующие пайщики приглашаются к получению электронных подписей через импорт.</p>
+            <p>В кооперативном мессенджере Op!Coop вам будет назначен представитель союза — он поможет адаптировать имеющийся базовый документооборот и определить порядок членства в союзе. По истечении периода адаптации кооператив полностью переходит на цифровой документооборот.</p>
+          </div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-left">
+            <div class="tl-dot special"></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-step">06</div>
+            <h4>Ежемесячный членский взнос</h4>
+            <p>Начиная со второго месяца — оплата по факту использования, но не менее 4 500 ₽ в месяц. В базовый пакет входит до 50 новых пайщиков и до 50 пакетов документов ежемесячно. Дополнительные приложения из каталога тарифицируются отдельно.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-glow"></div>
+  <div class="W">
+    <div class="cta-inner">
+
+      <div class="cta-card gold r">
+        <span class="cap cap-gold" style="font-size:9px">Для кооперативов</span>
+        <h3 class="t3">Подключите<br>свой кооператив</h3>
+        <p>Система разворачивается за 24 часа. Все подключённые кооперативы получают обновления ПО автоматически по мере выхода релизов.</p>
+        <a href="https://лк.цифровой-кооператив.рф" target="_blank" class="btn btn-g">Подключиться →</a>
+        <a href="https://docs.coopenomics.world" target="_blank" class="btn btn-o">Документация</a>
+      </div>
+
+      <div class="cta-card r d2">
+        <span class="cap" style="font-size:9px">Посмотреть изнутри</span>
+        <h3 class="t3">Демо-доступ</h3>
+        <p>Перейдите по ссылке на публичную тестовую сеть и воспользуйтесь почтой-ключом для просмотра демо.</p>
+        <div class="demo-cred-block">
+          <div class="demo-cred-row">
+            <label class="demo-cred-lbl">Почта</label>
+            <input type="text" class="demo-cred-inp" value="chairman@example.com" readonly>
+            <button type="button" class="demo-copy-btn" data-copy="chairman@example.com" title="Копировать">Копировать</button>
+          </div>
+          <div class="demo-cred-row">
+            <label class="demo-cred-lbl">Ключ</label>
+            <input type="text" class="demo-cred-inp" value="5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3" readonly>
+            <button type="button" class="demo-copy-btn" data-copy="5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3" title="Копировать">Копировать</button>
+          </div>
+        </div>
+        <a href="https://testnet.coopenomics.world" target="_blank" class="btn btn-g">Открыть демо →</a>
+      </div>
+
+      <div class="cta-card r d3 cta-card-wide">
+        <span class="cap" style="font-size:9px">Для пайщиков</span>
+        <h3 class="t3">Участвуйте<br>в создании платформы</h3>
+        <p>Система находится в активной разработке. Вы можете принять участие, инвестиров время или деньги через Благорост. Все участники получают долю в объекте авторских прав пропорционально вкладу и получают возвраты от членских взносов кооперативов-пользователей.</p>
+        <a href="https://благорост.цифровой-кооператив.рф" target="_blank" class="btn btn-g">Узнать о Благоросте →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="W">
+    <div class="foot-row">
+      <div>
+        <div class="foot-brand">ЦИФРОВОЙ КООПЕРАТИВ <span>/ ПК «ВОСХОД»</span></div>
+        <div class="foot-copy">© 2024–2026 Потребительский кооператив «ВОСХОД» · ФЗ № 3085-1</div>
+      </div>
+      <div class="foot-links">
+        <a href="https://coopenomics.world" target="_blank">Кооперативная Экономика</a>
+        <a href="https://blagorost.xn--e1agalmj7b.xn--e1afmapc.xn--p1ai" target="_blank">Благорост</a>
+        <a href="https://blog.coopenomics.world" target="_blank">Блог</a>
+        <a href="https://docs.coopenomics.world" target="_blank">Документация</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="src/js/main.js"></script>
+</body>
+</html>

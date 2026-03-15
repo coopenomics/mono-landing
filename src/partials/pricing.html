@@ -1,0 +1,121 @@
+<section id="pricing">
+  <div class="W">
+    <div class="r" style="margin-bottom:48px">
+      <span class="cap" style="display:block;margin-bottom:14px">Стоимость и подключение</span>
+      <h2 class="t2" style="margin-bottom:14px">Платите за то,<br><em>чем пользуетесь</em></h2>
+      <p style="max-width:560px;font-size:15px;color:var(--text-soft);line-height:1.8">Базовый пакет включает квоту на новых пайщиков и пакеты документов в месяц. При превышении — расход по факту. Дополнительные приложения из магазина тарифицируются отдельно.</p>
+    </div>
+
+    <div class="price-wrap">
+      <div class="r">
+        <div class="price-head head-highlight">
+          <span class="cap" >Тариф "Базовый"</span>
+        </div>
+        <div class="price-rules">
+          <div class="pr">
+            <span class="pr-l">Вступление в ПК «ВОСХОД»</span>
+            <span class="pr-v">4 000 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Вступительный взнос в союз</span>
+            <span class="pr-v">1 500 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Членский взнос в союз</span>
+            <span class="pr-v">1 000 ₽/мес</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Минимальный ежемесячный взнос</span>
+            <span class="pr-v">3 500 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Новых пайщиков в месяц включено</span>
+            <span class="pr-v">50 чел.</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Пакетов документов в месяц включено</span>
+            <span class="pr-v">50 пакетов</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Сверх квоты — новый пайщик</span>
+            <span class="pr-v">20 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Сверх квоты — один пакет документов</span>
+            <span class="pr-v">10 ₽</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Хостинг на серверах ПК «ВОСХОД»</span>
+            <span class="pr-v">включён</span>
+          </div>
+          <div class="pr">
+            <span class="pr-l">Приложения из каталога</span>
+            <span class="pr-v">по тарифу приложения</span>
+          </div>
+        </div>
+        <div class="pr-note">Оплата за нового пайщика — единовременная, не ежемесячная. Стоимость пакетов документов — по факту, но не менее 4 500 ₽/мес. Членство в союзах может влиять на условия. Точная стоимость каждого пакета документов определяется блокчейн-протоколом на основе количества обработанной, переданной и хранимой информации в пакете (может отличаться как в большую так и меньшую сторону).</div>
+      </div>
+
+      <div class="r d2">
+        <div class="calc-box">
+          <div class="calc-head head-highlight">
+            <span class="cap">Калькулятор стоимости</span>
+          </div>
+          <div class="calc-body">
+            <div class="calc-row">
+              <span class="calc-lbl">Новых пайщиков в этом месяце</span>
+              <input class="calc-inp" type="number" id="cm" value="50" min="0">
+            </div>
+            <div class="calc-row">
+              <span class="calc-lbl">Пакетов документов в месяц</span>
+              <input class="calc-inp" type="number" id="cd" value="50" min="0">
+            </div>
+            <div class="calc-row">
+              <span class="calc-lbl">Членский взнос в союз</span>
+              <span class="calc-app-price">1 000 ₽/мес</span>
+            </div>
+            <hr class="calc-div">
+            <div class="calc-app-lbl">Приложения из каталога</div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a1" checked disabled>
+                Регистрация пайщиков <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a2" checked disabled>
+                Решения совета <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a3" checked disabled>
+                Общие собрания <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-app">
+              <label>
+                <input type="checkbox" id="a4" checked disabled>
+                Цифровой кошелёк <span style="color:var(--t2);font-size:12px">(базовое)</span>
+              </label>
+              <span class="calc-app-price">включено</span>
+            </div>
+            <div class="calc-result">
+              <div>
+                <div class="cr-lbl">Итого в месяц</div>
+                <div class="cr-bd" id="calc-bd">базовый пакет 3 500 ₽</div>
+              </div>
+              <div class="cr-total" id="calc-total">3 500 ₽</div>
+            </div>
+            <div class="calc-once calc-once-highlight" id="calc-once">При подключении: +5 500 ₽</div>
+            <div class="calc-note">Стоимость за новых пайщиков сверх квоты — разовая, не ежемесячная. Новые приложения из каталога тарифицируются по тарифу приложения.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

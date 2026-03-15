@@ -1,0 +1,86 @@
+<section id="registries">
+  <div class="W">
+    <div class="reg-wrap">
+
+      <div class="r">
+        <span class="cap" style="display:block;margin-bottom:14px">Реестры и кошельки</span>
+        <h2 class="t2" style="margin-bottom:20px">Все данные —<br>в <em>реестрах</em></h2>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8">Каждое событие кооператива фиксируется в соответствующем реестре. Пайщики, платежи, документы и фонды находятся в одной системе с разграничением прав доступа.</p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">Документы хранятся в реестре в формате PDF, подписываются и могут быть предъявлены при аудите, в суде или налоговой. Блокчейн используется только для фиксации криптографического доказательства неизменности документа.</p>
+      </div>
+
+      <div class="reg-items r d2">
+        <div class="ri">
+          <div class="ri-icon">👥</div>
+          <div>
+            <div class="ri-name">Реестр пайщиков</div>
+            <div class="ri-desc">Все участники с историей действий, статусами и документами. Поиск по ФИО, ИНН, ОГРН и наименованию организации.</div>
+          </div>
+        </div>
+
+        <div class="ri">
+          <div class="ri-icon">💳</div>
+          <div>
+            <div class="ri-name">Реестр платежей</div>
+            <div class="ri-desc">История всех взносов и возвратов. Поддерживается ручное подтверждение операций или автоматическая обработка через платёжные шлюзы.</div>
+          </div>
+        </div>
+
+        <div class="ri">
+          <div class="ri-icon">📄</div>
+          <div>
+            <div class="ri-name">Реестр документов</div>
+            <div class="ri-desc">Все созданные документы кооператива. Полнотекстовый поиск, проверка цифровой подписи и скачивание PDF. Каждый пайщик видит только свои документы.</div>
+          </div>
+        </div>
+
+        <div class="ri">
+          <div class="ri-icon">💼</div>
+          <div>
+            <div class="ri-name">Реестр кошельков</div>
+            <div class="ri-desc">Учёт движения средств кооператива и пайщиков. Балансы изменяются только через действия смарт-контрактов.</div>
+          </div>
+        </div>
+        
+        <div class="ri ri-key">
+          <div class="ri-icon">⛓</div>
+          <div>
+            <div class="ri-name">Распределённый реестр</div>
+            <div class="ri-desc">Блокчейн фиксирует криптографический хэш документов и юридически значимых действий. Это позволяет подтвердить подлинность документа без раскрытия персональных данных.</div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="arch-box arch-box-full r d2">
+        <div class="arch-box-inner">
+          <div class="flow-vertical">
+            <span class="fs-node plain">Рабочий стол</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node plain">Документ (PDF)</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node plain">Электронная Подпись</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node key">Действие смарт-контракта</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node plain">Хэш документа</span>
+            <span class="fs-arr-v">↓</span>
+            <span class="fs-node chain">Блокчейн</span>
+          </div>
+          <div class="arch-box-text">
+            <span class="cap" style="display:block;margin-bottom:14px">Архитектурное ядро</span>
+            <h2 class="t3" style="margin-bottom:18px">Стандарты кооперации —<br><em>в смарт-контрактах</em></h2>
+            <p>
+              Все ключевые действия в системе выполняются по алгоритмам смарт-контрактов. Пользователь нажимает кнопку в интерфейсе, а система создаёт PDF-документ для электронной подписью. После этого система вычисляет криптографический хэш документа и передаёт его в действие смарт-контракта. 
+            </p>
+            <p style="margin-top:10px">
+              Смарт-контракт фиксирует хэш документа в блокчейне как часть транзакции бизнес-процесса. Транзакция выполняется только при соблюдении заданных условий, поэтому запись в блокчейне подтверждает, что конкретный документ участвовал в этом действии. Сам PDF хранится в реестре документов кооператива, а блокчейн содержит лишь криптографический отпечаток и факт исполнения операции.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

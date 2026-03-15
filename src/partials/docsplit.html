@@ -1,0 +1,117 @@
+<section id="docsplit">
+  <div class="W">
+    <div class="split-wrap">
+
+      <div class="r">
+        <span class="cap" style="display:block;margin-bottom:14px">Как формируется документ</span>
+        <h2 class="t2" style="margin-bottom:18px">Кнопка —<br><em>первичный документ</em></h2>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8">
+          Каждое действие в кооперативе — вступление, взнос, заказ, голосование — это шаг в юридически значимом процессе. Алгоритм каждого процесса закреплён в смарт-контракте в блокчейне: он определяет, кто действует, в каком порядке и какой документ при этом создаётся.
+        </p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">
+          Документы не генерируются разом — они появляются по одному, в момент, когда конкретный участник нажимает свою кнопку. Пайщик подаёт заявление — создаётся заявление. Члены совета голосуют и принимают решение — создаётся протокол. Так шаг за шагом процесс наполняется документами. Каждый подписывает своей электронной подписью, ключ хранится на его устройстве.
+        </p>
+        <p style="font-size:15px;color:var(--text-soft);line-height:1.8;margin-top:12px">
+          Когда процесс завершён, все документы по нему хранятся в реестре как единый комплект — пакет. Криптографический отпечаток каждого документа зафиксирован в блокчейне: подлинность можно подтвердить в любой момент без нотариуса.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-spine"><div class="sn">01</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Пайщик совершает действие</h4>
+              <p>Нажимает кнопку — система создаёт документ по шаблону смарт-контракта и предлагает подписать его электронной подписью.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-spine"><div class="sn">02</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Совет рассматривает и отвечает</h4>
+              <p>Члены совета видят событие в повестке, голосуют и принимают решение. В этот момент создаётся и подписывается следующий документ — протокол.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-spine"><div class="sn">03</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Каждый шаг — отдельный документ</h4>
+              <p>Алгоритм процесса задан смарт-контрактом. Документы появляются по одному, в нужный момент, у нужного участника.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-spine"><div class="sn">04</div><div class="sl"></div></div>
+            <div class="sb">
+              <h4>Документ делится на две части</h4>
+              <p>Приватные данные — только на сервере кооператива. В блокчейн уходит только анонимный хэш для верификации.</p>
+            </div>
+          </div>
+          <div class="step done">
+            <div class="step-spine"><div class="sn">✓</div></div>
+            <div class="sb">
+              <h4>Процесс завершён — пакет в реестре</h4>
+              <p>Все документы и цифровые подписи участников процесса собраны в реестре. Кошельки обновлены. Правила стандартов кооперации выполнены.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="r d2">
+
+        <!-- ── Визуальная схема разделения документа ── -->
+        <div class="doc-split-schema">
+          <div class="doc-split-top">
+            <div class="doc-split-file">
+              <span>📄</span>
+              <span>document.pdf</span>
+              <span class="doc-split-signed">✓ ЭП пайщика</span>
+            </div>
+          </div>
+
+          <div class="doc-split-divider">
+            <div class="doc-split-line"></div>
+            <div class="doc-split-label">состоит из двух частей</div>
+            <div class="doc-split-line"></div>
+          </div>
+
+          <div class="db-halves">
+            <div class="db-half">
+              <div class="db-hh">🔒 Реестр документов</div>
+              <div class="db-hh-note">Приватно · ваш сервер</div>
+              <div class="db-row"><span class="dk">ФИО</span><span class="dv dim">Иванов Иван И.</span></div>
+              <div class="db-row"><span class="dk">Email</span><span class="dv dim">ivan@example.com</span></div>
+              <div class="db-row"><span class="dk">Телефон</span><span class="dv dim">+7 910 ███-██</span></div>
+              <div class="db-row"><span class="dk">Документ</span><span class="dv dim">document.pdf</span></div>
+            </div>
+            <div class="db-half">
+              <div class="db-hh pub">⛓ Распределённый реестр</div>
+              <div class="db-hh-note">Публично · блокчейн</div>
+              <div class="db-row"><span class="dk">Аккаунт</span><span class="dv hash">ivanov12345</span></div>
+              <div class="db-row"><span class="dk">Сумма</span><span class="dv">5 000 ₽</span></div>
+              <div class="db-row"><span class="dk">SHA-256</span><span class="dv hash">a1b2c3…</span></div>
+              <div class="db-row"><span class="dk">Подпись</span><span class="dv ok">✓ верифицирована</span></div>
+            </div>
+          </div>
+
+          <div class="db-note doc-split-desc">
+            Публичные данные хранятся в блокчейне анонимизированно, приватные — в базе данных кооператива. Всем доступна информация о факте действия, но только кооперативу — кем конкретно это действие произведено.
+          </div>
+        </div>
+
+        <!-- ── Что такое пакет документов ── -->
+        <div class="doc-packet-box">
+          <span class="cap" style="display:block;margin-bottom:10px;font-size:9px">Пакет документов</span>
+          <p style="font-size:13px;color:var(--text-soft);line-height:1.8;margin-bottom:14px">
+            Пакет — это не моментальная выгрузка, а итог процесса. Возьмём вступление нового пайщика: сначала пайщик подаёт заявление и подписывает его — появляется первый документ. Затем совет рассматривает заявку, голосует и принимает решение — появляется второй. Когда все шаги пройдены, процесс закрыт, а его документы хранятся в реестре как единый пакет. Взнос, заказ, возврат — у каждого сценария свой алгоритм и свой пакет.
+          </p>
+          <div class="doc-packet-event">Пример: <strong>Вступление пайщика</strong></div>
+          <div class="doc-packet-arr">↓</div>
+          <div class="doc-packet-list">
+            <div class="doc-packet-item"><span>📄</span> Заявление о вступлении <span style="font-size:10px;color:var(--text-soft);">— подписывает пайщик</span></div>
+            <div class="doc-packet-item"><span>📄</span> Протокол решения совета <span style="font-size:10px;color:var(--text-soft);">— подписывает председатель</span></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
