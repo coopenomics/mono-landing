@@ -20,7 +20,6 @@ const PARTIALS_ORDER = [
   'ready',
   'registries',
   'docsplit',
-  'base',
   'store',
   'reporting',
   'chatcoop',
