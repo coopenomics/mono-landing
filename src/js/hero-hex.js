@@ -67,16 +67,29 @@ function initHeroHex() {
   function startAnim() {
     window._hexStart = performance.now();
     var startTime = window._hexStart;
+    var lastDraw = 0;
+    var targetInterval = 1000 / 30;
+    var rafId;
     function tick() {
-      var t = (performance.now() - startTime) / 1000;
-      hexPoints.forEach(function (p) {
-        var cycle = (t / 4.5 + p.phase) % 1;
-        p.scale = 1 + 0.25 * Math.sin(cycle * Math.PI);
-      });
-      drawHex(t);
-      requestAnimationFrame(tick);
+      var now = performance.now();
+      if (now - lastDraw >= targetInterval) {
+        lastDraw = now;
+        var t = (now - startTime) / 1000;
+        hexPoints.forEach(function (p) {
+          var cycle = (t / 4.5 + p.phase) % 1;
+          p.scale = 1 + 0.25 * Math.sin(cycle * Math.PI);
+        });
+        drawHex(t);
+      }
+      rafId = requestAnimationFrame(tick);
     }
-    tick();
+    var hero = document.getElementById('hero');
+    var io = hero && typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(function (e) {
+      if (e[0].isIntersecting) { lastDraw = 0; rafId = requestAnimationFrame(tick); }
+      else if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    }, { threshold: 0 }) : null;
+    if (io && hero) io.observe(hero);
+    if (!io || !hero) tick();
   }
 
   function onResize() {
