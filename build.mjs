@@ -58,6 +58,7 @@ function build() {
 
 ${bodyContent}
 
+<script src="src/js/hero-hex.js"></script>
 <script src="src/js/main.js"></script>
 </body>
 </html>
