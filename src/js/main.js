@@ -62,14 +62,8 @@
     var eM = Math.max(0, m - IQ_M) * PR_M;
     var eD = Math.max(0, d - IQ_D) * PR_D;
     var total = Math.max(BASE, BASE + eM + eD) + union;
-    var bd = ['базовый пакет ' + BASE.toLocaleString('ru') + ' ₽'];
-    if(union > 0) bd.push('+ ' + union.toLocaleString('ru') + ' ₽ членство в союзе');
-    if(eM > 0) bd.push('+' + eM + ' ₽ новые пайщики');
-    if(eD > 0) bd.push('+' + eD + ' ₽ пакеты документов');
     var totalEl = document.getElementById('calc-total');
-    var bdEl = document.getElementById('calc-bd');
     if (totalEl) totalEl.textContent = total.toLocaleString('ru') + ' ₽';
-    if (bdEl) bdEl.innerHTML = bd.join('<br>');
   }
   var cmEl = document.getElementById('cm');
   var cdEl = document.getElementById('cd');
