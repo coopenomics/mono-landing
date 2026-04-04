@@ -23,6 +23,7 @@ const STANDALONE_PAGES = ['documents.html', 'proposal.html', 'contacts.html'];
 const PARTIALS_ORDER = [
   'nav',
   'hero',
+  'why',
   'ready',
   'registries',
   'docsplit',
